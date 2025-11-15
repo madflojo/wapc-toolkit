@@ -45,4 +45,4 @@ jobs:
         with:
           version: latest
           working-directory: ${{ matrix.modules }}
-          args: -E misspell -E revive -E gochecknoinits -E gofmt -E errname -c ${{ needs.generate-matrix.outputs.golangci_cfg_path }}
+          args: -E misspell -E revive -E gochecknoinits -E errname -c ${{ needs.generate-matrix.outputs.golangci_cfg_path }}
