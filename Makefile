@@ -5,7 +5,7 @@ all: build tests lint
 COMPONENTS = callbacks engine testdata/hello-go
 
 # Run tests for all modules
-tests:
+tests: build
 	@echo "Running tests for all modules..."
 	@for dir in $(COMPONENTS); do \
 		$(MAKE) -C $$dir tests || exit 1; \
